@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Регістрація користувача</title>
+</head>
+<body>
+  <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Вход</button>
+        <button type="button" class="toggle-btn" onclick="register()">Регистрация</button>
+        </div>  
+    
+    <div class="social-icons">
+        <img src="images/Instagram.png">
+        <img src="images/email.png">
+        <img src="images/telegram1.png">
+  </div>
+  <form id="login" class="input-group">
+      <input type="text" class="input-field" placeholder="Имя Пользователя" required>
+      <input type="text" class="input-field" placeholder="Пароль" required>
+      <input type="checkbox" class="checkbox"><span> Запамятать пароль</span>
+      <button type="submit" class="submit-btn">Вход</button>
+  </form>
+  <form id="register" class="input-group">
+    <input type="text" class="input-field" placeholder="Имя Пользователя" required>
+    <input type="text" class="input-field" placeholder="Пароль" required>
+    <input type="text" class="input-field" placeholder="Email" required>
+    <button type="submit" class="submit-btn">Регистрация</button>
+</form>
+    </div>
+  </div>
+
+  <script>
+       var x=document.getElementById("login")
+       var y=document.getElementById("register")
+       var z=document.getElementById("btn")
+       function register(){
+           x.style.left = "-450px"
+           y.style.left = "50px"
+           z.style.left = "110px"
+       }
+       function login(){
+           x.style.left = "50px"
+           y.style.left = "450px"
+           z.style.left = "0px"
+       }
+
+  </script>
+</body>
+</html>
